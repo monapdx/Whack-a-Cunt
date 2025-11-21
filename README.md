@@ -1,7 +1,8 @@
 # **Whack-a-Cunt**  
 *A browser-based parody game featuring America’s favorite judicial embarrassments.*
 <img src="https://raw.githubusercontent.com/monapdx/Whack-a-Cunt/refs/heads/main/amy.gif" width="337">
-![Amy](amy.gif) ![Brett](brett.gif) ![Clarence](clarence.gif)
+<img src="https://raw.githubusercontent.com/monapdx/Whack-a-Cunt/refs/heads/main/brett.gif" width="337"> 
+<img src="https://raw.githubusercontent.com/monapdx/Whack-a-Cunt/refs/heads/main/clarence.gif" width="337">
 
 ## 🧨 What Is This?
 **Whack-a-Cunt** is a simple, savage little browser game where three Supreme Court extremists pop out of their holes — and your job is to smack them back into whatever swamp they crawled out of.

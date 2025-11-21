@@ -1,7 +1,9 @@
 # **Whack-a-Cunt**  
 *A browser-based parody game featuring America’s favorite judicial embarrassments.*
 <img src="https://raw.githubusercontent.com/monapdx/Whack-a-Cunt/refs/heads/main/amy.gif" width="337">
-<img src="https://raw.githubusercontent.com/monapdx/Whack-a-Cunt/refs/heads/main/brett.gif" width="337"> 
+
+<img src="https://raw.githubusercontent.com/monapdx/Whack-a-Cunt/refs/heads/main/brett.gif" width="337">
+
 <img src="https://raw.githubusercontent.com/monapdx/Whack-a-Cunt/refs/heads/main/clarence.gif" width="337">
 
 ## 🧨 What Is This?

@@ -192,18 +192,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function gameCycle() {
-    // make sure she's hidden
     hideMole();
 
     const downTime = getRandomDownTime();
 
     cycleTimeout = setTimeout(() => {
-      // pick a random hole and show her
       const index = Math.floor(Math.random() * holes.length);
       activeHole = holes[index];
       activeHole.classList.add('active');
 
-      // keep her up briefly, then start next cycle
       upTimeout = setTimeout(() => {
         hideMole();
         gameCycle();
@@ -211,29 +208,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }, downTime);
   }
 
-  // click anywhere in the grid (hole or mole)
-  grid.addEventListener('click', (event) => {
-    const hole = event.target.closest('.hole');
-    if (!hole) return;                       // clicked outside a hole
-    if (!hole.classList.contains('active')) return; // only score if she's up
+  // unified handler for mouse / touch / pointer
+  function handleWhack(event) {
+    // so touch doesn't also fire a click later
+    event.preventDefault();
 
-    // score!
+    const hole = event.target.closest('.hole');
+    if (!hole) return;
+    if (!hole.classList.contains('active')) return;
+
     score++;
     scoreEl.textContent = 'Score: ' + score;
 
-    // stop current "up" timer so she doesn't auto-hide weirdly
     if (upTimeout) {
       clearTimeout(upTimeout);
       upTimeout = null;
     }
 
-    hideMole();   // remove her now
-    gameCycle();  // start a new cycle: quiet time, then next pop-up
-  });
+    hideMole();
+    gameCycle();
+  }
 
-  // start the game loop
+  // Prefer Pointer Events if available (covers mouse + touch)
+  if (window.PointerEvent) {
+    grid.addEventListener('pointerdown', handleWhack);
+  } else {
+    // Fallback for older browsers
+    grid.addEventListener('mousedown', handleWhack);
+    grid.addEventListener('touchstart', handleWhack, { passive: false });
+  }
+
   gameCycle();
 });
+
 </script>
 
 </body>

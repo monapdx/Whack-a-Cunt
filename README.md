@@ -1,10 +1,10 @@
-# **Whack-a-C*nt**  
+# **Whack-a-Cunt**  
 *A browser-based parody game featuring America’s favorite judicial embarrassments.*
 
 ![Amy](amy.gif) ![Brett](brett.gif) ![Clarence](clarence.gif)
 
 ## 🧨 What Is This?
-**Whack-a-C*nt** is a simple, savage little browser game where three Supreme Court extremists pop out of their holes — and your job is to smack them back into whatever swamp they crawled out of.
+**Whack-a-Cunt** is a simple, savage little browser game where three Supreme Court extremists pop out of their holes — and your job is to smack them back into whatever swamp they crawled out of.
 
 It’s a parody.  
 It’s catharsis.  
@@ -66,7 +66,7 @@ This makes taps register instantly so you can smack Brett without lag.
 
 ## 🧹 Future Enhancements (Optional Chaos)
 - Timer mode  
-- Combo multiplier (“Rapid-F*ck-These-Guys mode”)  
+- Combo multiplier (“Rapid-Fuck-These-Guys mode”)  
 - High-score leaderboard  
 - Sound effects (gavel hits? angry screams?)  
 - Difficulty settings (Roe-Overturned Edition)  
